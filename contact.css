@@ -96,7 +96,104 @@ header .fa-bars {
     border: 1.5rem solid rgba(0, 0, 0, .3);
     display: none;
 }
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    margin: 0;
+    padding: 20px;
+}
 
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    margin: auto;
+}
+
+label {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 10px;
+    font-size: 1.5rem;
+}
+
+input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    font-size: 1.5rem;
+}
+h2 , h3{
+    font-size: 2rem;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+ol, ul {
+    margin: 20px 0;
+    padding-left: 20px;
+    font-size: 1.5rem;
+}
+
+ol li {
+    margin-bottom: 10px;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
 
 .footer .box-container{
     display: flex;
@@ -144,101 +241,6 @@ header .fa-bars {
 .footer .credit span{
     color: var(--pink);
 }
-.contact-section {
-    max-width: 600px;
-    margin: 2rem auto;
-    padding: 20px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    font-size: 1.3rem;
-}
-
-.contact-section h2 {
-    font-size: 4rem;
-    color: #f08080;
-    margin-bottom: 1rem;
-}
-
-.contact-section form {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.3rem;
-}
-
-.contact-section label {
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.contact-section input,
-.contact-section textarea,
-.contact-section select {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1.5rem;
-}
-
-.contact-section input[type="checkbox"] {
-    margin-right: 10px;
-}
-
-.contact-section button {
-    background-color: #f08080;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1.3rem;
-}
-
-.contact-section button:hover {
-    background-color: #d96d6d;
-}
-
-.btn{
-    cursor: pointer;
-    margin-right: 60%;
-  }
-  
-  #box{
-    width: 500px;
-    overflow: hidden;
-    background: #fff;
-    box-shadow: 0 0 10px black;
-    border-radius: 10px;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 9999;
-    padding: 10px;
-    text-align: center;
-    display: none;
-  }
-  
-  #box span{
-    color: #1A3636;
-    font-size: 40px;
-    display: block;
-    margin: 20px 0;
-  }
-  
-  #box h1{
-    color: brown
-  }
-  
-  .close{
-    font-size: 18px;
-    color:#1A3636;
-    padding: 10px 20px;
-    cursor: pointer;
-    background: #fff;
-    display: inline-block;
-    border-radius: 1px solid #000;
-  }
 
 
 

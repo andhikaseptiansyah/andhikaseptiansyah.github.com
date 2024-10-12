@@ -7,7 +7,7 @@
      <!--Font awesome cdn link-->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
      <!--custom css file link-->
-     <link rel="stylesheet" href="contact.css"> 
+     <link rel="stylesheet" href="contact.css">
 </head>
 <body>
 
@@ -15,7 +15,7 @@
     <header>
         <input type="checkbox" name="" id="toggler">
         <label for="toggler" class="fas fa-bars"></label>
-        <a href="#" class="logo">Contact <span>Us</span></a>
+        <a href="#" class="logo">Dhika <span>Bakery</span></a>
        <nav class="navbar">
         <a href="bread.html">Product</a>
         <a href="review.html">review</a>
@@ -23,46 +23,96 @@
        </nav>
         <div class="icons">
             <a href="index.html" class="fas fa-home"></a>
-            <a href="maps.html" class="fas fa-map-location-dot"></a>
             
         </div>
     </header>
 
-    <section class="contact-section">
-        <h1 class="heading"></h1>
-        <h1 class="heading"></h1>
-        <p>If you have any questions or need further information, feel free to contact us by filling out the form below.</p>
-        
-        <form action="process_contact" method="POST">
-            <label for="name">Full Name:</label>
-            <input type="text" id="name" name="name" required>
+  
+    <!-- Bagian Formulir -->
+    <h1 class="heading"></h1>
+    <h1 class="heading"></h1>
+    <h1 class="heading">Contact <span>Us</span></h1>
+    <form>
+        <!-- Input Teks -->
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+        <!-- Memasukkan Kata Sandi -->
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
+        <!-- Area Teks -->
+        <label for="bio">Message:</label>
+        <textarea id="bio" name="bio" rows="4" cols="50"></textarea><br><br>
 
-            <label for="subscribe">
-                <input type="checkbox" id="subscribe" name="subscribe"> I would like to receive promotional emails from Dhika Bakery.
-            </label>
+        <!-- Radio -->
+        <label>Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Famale</label><br><br>
 
-            <label for="preferred-product">Preferred Product:</label>
-            <select id="preferred-product" name="preferred_product">
-                <option value="bread">Bread</option>
-                <option value="cake">Cake</option>
-                <option value="pastry">Pastry</option>
-            </select>
+        <!-- Kotak Centang -->
+        <label>products:</label><br>
+        <input type="checkbox" id="Products1" name="Products1" value="Bread">
+        <label for="Products1">Bread</label><br>
+        <input type="checkbox" id="Products2" name="Products2" value="Donut">
+        <label for="Products1">Donut</label><br>
+        <input type="checkbox" id="Products3" name="Products3" value="Cake">
+        <label for="Products3">Cake</label><br><br>
+        <!-- Pemilihan -->
+        <label for="country">select country:</label>
+        <select id="country" name="country">
+            <option value="indonesia">Indonesia</option>
+            <option value="malaysia">Malaysia</option>
+            <option value="singapura">Singapura</option>
+        </select><br><br>
 
-            <a class="btn" onclick="pop()">Send Massage</a>
-            <div id="box">
-              <i class="fas fa-check-circle"></i> 
-              <h1>Good Job</h1>
-              <a class="close" onclick="pop()">Close</a>
-            </div>
-          <script src="popupcontact.js"></script>
-        </form>
-    </section>
+        <!-- Tombol Kirim -->
+        <input type="submit" value="Kirim">
+    </form>
+
+    <hr>
+
+    <!-- Bagian Daftar dan Tabel -->
+    <h2>additional information</h2>
+
+    <!-- Tabel -->
+    <h3>Customer data</h3>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>products</th>
+            <th>country</th>
+        </tr>
+        <tr>
+            <td>Dhika</td>
+            <td>Cake</td>
+            <td>Malaysia</td>
+        </tr>
+        <tr>
+            <td>Bambang</td>
+            <td>Bread</td>
+            <td>Indonesia</td>
+        </tr>
+    </table>
+
+    <!-- Daftar Berurutan -->
+    <h3>Steps to send a message</h3>
+    <ol>
+        <li>Fill out the form and write a message</li>
+        <li>Double check the data</li>
+        <li>Click the send button</li>
+    </ol>
+
+    <!-- Daftar Tidak Berurutan -->
+    <h3>Condition :</h3>
+    <ul>
+        <li>Have a complaint or problem</li>
+        <li>Have proof</li>
+    </ul>
+
+
     <section class="footer">
         <div class="box-container">
             <div class="box">
